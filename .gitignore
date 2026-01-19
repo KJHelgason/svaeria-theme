@@ -1,0 +1,23 @@
+# OS Files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Build artifacts (if added later)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Logs
+*.log
+debug.log
+
+# Compiled files
+*.map
