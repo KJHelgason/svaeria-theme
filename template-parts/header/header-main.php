@@ -15,15 +15,37 @@ if (class_exists('WooCommerce') && WC()->cart) {
 $uncategorized = get_term_by('slug', 'uncategorized', 'product_cat');
 $exclude_ids = $uncategorized ? array($uncategorized->term_id) : array();
 
+// Custom category order (parent categories)
+$category_order = array('Clothing', 'Flowers', 'Accessories', 'Antiques');
+
+// Custom subcategory order per parent category
+$subcategory_order = array(
+    'Clothing'    => array('Costumes', 'Easywear', 'Armour'),
+    'Flowers'     => array('Boutiques', 'Individual'),
+    'Accessories' => array('Belts', 'Hats', 'Gloves', 'Bags'),
+    'Antiques'    => array('Furniture', 'Accessories', 'Home Decor', 'Kitchen'),
+);
+
 // Get product categories for mega menu (excluding Uncategorized)
 $product_categories = get_terms(array(
     'taxonomy'   => 'product_cat',
     'hide_empty' => false,
     'parent'     => 0, // Only parent categories
-    'orderby'    => 'name',
-    'order'      => 'ASC',
     'exclude'    => $exclude_ids,
 ));
+
+// Sort categories by custom order
+if (!empty($product_categories) && !is_wp_error($product_categories)) {
+    usort($product_categories, function($a, $b) use ($category_order) {
+        $pos_a = array_search($a->name, $category_order);
+        $pos_b = array_search($b->name, $category_order);
+        // If not in custom order, place at end alphabetically
+        if ($pos_a === false) $pos_a = 999;
+        if ($pos_b === false) $pos_b = 999;
+        if ($pos_a === $pos_b) return strcmp($a->name, $b->name);
+        return $pos_a - $pos_b;
+    });
+}
 ?>
 
 <!-- Sticky Header Wrapper -->
@@ -99,9 +121,20 @@ $product_categories = get_terms(array(
                                             'taxonomy'   => 'product_cat',
                                             'hide_empty' => false,
                                             'parent'     => $category->term_id,
-                                            'orderby'    => 'name',
-                                            'order'      => 'ASC',
                                         ));
+
+                                        // Sort subcategories by custom order
+                                        if (!empty($subcategories) && !is_wp_error($subcategories) && isset($subcategory_order[$category->name])) {
+                                            $sub_order = $subcategory_order[$category->name];
+                                            usort($subcategories, function($a, $b) use ($sub_order) {
+                                                $pos_a = array_search($a->name, $sub_order);
+                                                $pos_b = array_search($b->name, $sub_order);
+                                                if ($pos_a === false) $pos_a = 999;
+                                                if ($pos_b === false) $pos_b = 999;
+                                                if ($pos_a === $pos_b) return strcmp($a->name, $b->name);
+                                                return $pos_a - $pos_b;
+                                            });
+                                        }
                                         
                                         $category_link = get_term_link($category);
                                         ?>
