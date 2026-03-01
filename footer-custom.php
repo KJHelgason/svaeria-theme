@@ -70,19 +70,7 @@
             </div>
         </div>
     </section>
-    
-    <!-- Payment Icons -->
-    <section class="jj-footer-payments">
-        <div class="jj-payments-container">
-            <img src="https://jonnajintonsweden.com/wp-content/uploads/2025/05/FedEx-1.svg" alt="FedEx" />
-            <img src="https://jonnajintonsweden.com/wp-content/uploads/2025/05/Visa-1.svg" alt="Visa" />
-            <img src="https://jonnajintonsweden.com/wp-content/uploads/2025/05/Mastercard-1.svg" alt="Mastercard" />
-            <img src="https://jonnajintonsweden.com/wp-content/uploads/2025/05/AmericanExpress-1.svg" alt="American Express" />
-            <img src="https://jonnajintonsweden.com/wp-content/uploads/2025/05/PayPal-1.svg" alt="PayPal" />
-            <img src="https://jonnajintonsweden.com/wp-content/uploads/2025/05/Klarna-1.svg" alt="Klarna" />
-        </div>
-    </section>
-    
+
     <!-- Main Footer -->
     <section class="jj-footer-main">
         <div class="jj-footer-container">
@@ -94,9 +82,23 @@
                 <div class="jj-footer-menu">
                     <h4>Products</h4>
                     <ul>
-                        <li><a href="/product-category/jewelry/">Jewelry</a></li>
-                        <li><a href="/product-category/prints/">Photo Prints</a></li>
-                        <li><a href="/product-category/music/">Music</a></li>
+                        <?php
+                        $footer_uncategorized = get_term_by('slug', 'uncategorized', 'product_cat');
+                        $footer_exclude_ids = $footer_uncategorized ? array($footer_uncategorized->term_id) : array();
+                        $footer_categories = get_terms(array(
+                            'taxonomy'   => 'product_cat',
+                            'hide_empty' => false,
+                            'parent'     => 0,
+                            'exclude'    => $footer_exclude_ids,
+                        ));
+                        if (!empty($footer_categories) && !is_wp_error($footer_categories)) :
+                            foreach ($footer_categories as $footer_cat) :
+                        ?>
+                            <li><a href="<?php echo esc_url(get_term_link($footer_cat)); ?>"><?php echo esc_html($footer_cat->name); ?></a></li>
+                        <?php
+                            endforeach;
+                        endif;
+                        ?>
                     </ul>
                 </div>
                 
@@ -111,10 +113,8 @@
                 <div class="jj-footer-menu">
                     <h4>Service</h4>
                     <ul>
-                        <li><a href="/faq/">FAQ</a></li>
                         <li><a href="/customer-service/">Support</a></li>
                         <li><a href="/shipping-returns/">Shipping & return</a></li>
-                        <li><a href="/jewelry-care/">Jewelry care</a></li>
                         <li><a href="/terms-conditions/">Terms & conditions</a></li>
                         <li><a href="/privacy-policy/">Privacy policy</a></li>
                         <li><a href="/cookies/">Cookies</a></li>
@@ -124,19 +124,8 @@
                 <div class="jj-footer-menu jj-footer-contact">
                     <h4>Contact</h4>
                     <p>
-                        <strong>Customer support</strong><br>
-                        <a href="mailto:support@example.com">support@example.com</a>
-                    </p>
-                    <p>
-                        <strong>Business related</strong><br>
+                        <strong>Business Inquiries</strong><br>
                         <a href="mailto:business@example.com">business@example.com</a>
-                    </p>
-                    <p class="jj-footer-address">
-                        <strong>Ordinary mail</strong><br>
-                        Company Name AB<br>
-                        Street Address 123<br>
-                        123 45 City<br>
-                        Country
                     </p>
                 </div>
             </div>
@@ -147,14 +136,8 @@
             <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
                 <img src="https://jonnajintonsweden.com/wp-content/uploads/2025/05/Insta-1.svg" alt="Instagram" />
             </a>
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
-                <img src="https://jonnajintonsweden.com/wp-content/uploads/2025/05/Facebook-2.svg" alt="Facebook" />
-            </a>
             <a href="https://www.pinterest.com/" target="_blank" rel="noopener" aria-label="Pinterest">
                 <img src="https://jonnajintonsweden.com/wp-content/uploads/2025/05/Pinterest-1.svg" alt="Pinterest" />
-            </a>
-            <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube">
-                <img src="https://jonnajintonsweden.com/wp-content/uploads/2025/05/Youtube-3.svg" alt="YouTube" />
             </a>
         </div>
         

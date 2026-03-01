@@ -4584,38 +4584,6 @@ input[type="submit"].jj-newsletter-button:hover {
     margin-bottom: 5px;
 }
 
-/* Payment Icons */
-.jj-footer-payments {
-    background-color: #fff;
-    padding: 30px;
-}
-
-.jj-payments-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-/* Override WooCommerce default image styles for footer */
-.woocommerce .jj-payments-container img,
-.woocommerce-page .jj-payments-container img,
-.jj-payments-container img {
-    height: 28px !important;
-    width: auto !important;
-    max-width: none !important;
-    opacity: 0.7;
-    transition: opacity 0.3s ease;
-}
-
-.woocommerce .jj-payments-container img:hover,
-.woocommerce-page .jj-payments-container img:hover,
-.jj-payments-container img:hover {
-    opacity: 1;
-}
-
 /* Main Footer */
 .jj-footer-main {
     background-color: var(--jj-section-grey);
@@ -4840,11 +4808,6 @@ input[type="submit"].jj-newsletter-button:hover {
         gap: 40px;
     }
     
-    .jj-payments-container {
-        flex-wrap: wrap;
-        gap: 30px;
-    }
-    
     .jj-footer-main {
         padding: 50px 30px 30px;
     }
@@ -4866,10 +4829,6 @@ input[type="submit"].jj-newsletter-button:hover {
     
     .jj-footer-menu {
         flex: 0 0 100%;
-    }
-    
-    .jj-payments-container img {
-        height: 22px;
     }
     
     .jj-back-to-top {
