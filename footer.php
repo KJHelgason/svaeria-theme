@@ -88,14 +88,12 @@
     <section class="jj-footer-main">
         <div class="jj-footer-container">
             <div class="jj-footer-logo">
-                <?php 
+                <?php
                 $custom_logo_id = get_theme_mod('custom_logo');
                 if ($custom_logo_id) {
                     echo wp_get_attachment_image($custom_logo_id, 'full');
-                } else {
+                }
                 ?>
-                    <img src="https://jonnajintonsweden.com/wp-content/uploads/2025/05/Logo-1.svg" alt="<?php echo get_bloginfo('name'); ?>" />
-                <?php } ?>
             </div>
             
             <div class="jj-footer-menus">
