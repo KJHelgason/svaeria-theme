@@ -50,39 +50,6 @@
             </div>
         </div>
     </section>
-    
-    <!-- Features Section -->
-    <section class="jj-footer-features">
-        <div class="jj-features-container">
-            <div class="jj-feature">
-                <div class="jj-feature-icon">
-                    <img src="https://jonnajintonsweden.com/wp-content/uploads/2025/05/Shipment-1.svg" alt="Free Shipping" />
-                </div>
-                <div class="jj-feature-text">
-                    <strong>FREE SHIPPING ON ALL ORDERS</strong>
-                    <span>We offer free worldwide shipping on all orders</span>
-                </div>
-            </div>
-            <div class="jj-feature">
-                <div class="jj-feature-icon">
-                    <img src="https://jonnajintonsweden.com/wp-content/uploads/2025/05/Global-1.svg" alt="Worldwide Delivery" />
-                </div>
-                <div class="jj-feature-text">
-                    <strong>WORLDWIDE DELIVERY</strong>
-                    <span>With FedEx International Priority, we deliver to all corners of the world.</span>
-                </div>
-            </div>
-            <div class="jj-feature">
-                <div class="jj-feature-icon">
-                    <img src="https://jonnajintonsweden.com/wp-content/uploads/2025/05/Payment-1.svg" alt="Safe Payments" />
-                </div>
-                <div class="jj-feature-text">
-                    <strong>SAFE AND SECURE PAYMENTS</strong>
-                    <span>Pay safe with Card, PayPal or Klarna</span>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Main Footer -->
     <section class="jj-footer-main">

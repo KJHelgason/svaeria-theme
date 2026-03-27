@@ -15,6 +15,11 @@ Text Domain: kadence-child
    JONNA JINTON STYLE - NORDIC JEWELRY AESTHETIC
    ========================================================================== */
 
+/* Hide Kadence payment logos */
+.jj-footer-payments {
+    display: none;
+}
+
 /* --------------------------------------------------------------------------
    CSS Variables / Design Tokens
    -------------------------------------------------------------------------- */

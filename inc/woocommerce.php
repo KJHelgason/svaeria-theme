@@ -67,11 +67,21 @@ add_filter('woocommerce_gallery_thumbnail_size', function() {
 /**
  * Set product image sizes to 3:4 portrait ratio
  */
-add_action('after_setup_theme', function() {
-    add_image_size('woocommerce_thumbnail', 400, 533, true);       // Shop catalog
-    add_image_size('woocommerce_single', 600, 800, true);          // Single product
-    add_image_size('woocommerce_gallery_thumbnail', 150, 200, true); // Gallery thumbs
-}, 20);
+add_filter('woocommerce_get_image_size_thumbnail', function($size) {
+    return array(
+        'width'  => 400,
+        'height' => 533,
+        'crop'   => 0,
+    );
+});
+
+add_filter('woocommerce_get_image_size_single', function($size) {
+    return array(
+        'width'  => 600,
+        'height' => 800,
+        'crop'   => 0,
+    );
+});
 
 /**
  * Add trust badges after checkout
