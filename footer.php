@@ -45,9 +45,54 @@
             </div>
             <div class="jj-newsletter-image-col">
                 <div class="jj-newsletter-image">
-                    <img src="<?php echo esc_url(get_theme_mod('jj_footer_newsletter_image', 'https://jonnajintonsweden.com/wp-content/uploads/2022/10/jewelry-jonna-jinton-bison-silverchain-12-L.jpg')); ?>" alt="Newsletter" />
+                    <img src="<?php echo esc_url(get_theme_mod('jj_footer_newsletter_image', 'https://svaeria.is/wp-content/uploads/2026/03/IMG_8340-scaled-e1774020791822.jpg')); ?>" alt="Newsletter" />
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="jj-footer-features">
+        <div class="jj-features-container">
+            <div class="jj-feature">
+                <div class="jj-feature-icon">
+                    <img src="https://jonnajintonsweden.com/wp-content/uploads/2025/05/Shipment-1.svg" alt="Free Shipping" />
+                </div>
+                <div class="jj-feature-text">
+                    <strong>FREE SHIPPING ON ALL ORDERS</strong>
+                    <span>We offer free worldwide shipping on all orders</span>
+                </div>
+            </div>
+            <div class="jj-feature">
+                <div class="jj-feature-icon">
+                    <img src="https://jonnajintonsweden.com/wp-content/uploads/2025/05/Global-1.svg" alt="Worldwide Delivery" />
+                </div>
+                <div class="jj-feature-text">
+                    <strong>WORLDWIDE DELIVERY</strong>
+                    <span>With FedEx International Priority, we deliver to all corners of the world.</span>
+                </div>
+            </div>
+            <div class="jj-feature">
+                <div class="jj-feature-icon">
+                    <img src="https://jonnajintonsweden.com/wp-content/uploads/2025/05/Payment-1.svg" alt="Safe Payments" />
+                </div>
+                <div class="jj-feature-text">
+                    <strong>SAFE AND SECURE PAYMENTS</strong>
+                    <span>Pay safe with Card, Teya or Klarna</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Icons -->
+    <section class="jj-footer-payments">
+        <div class="jj-payments-container">
+            <img src="https://jonnajintonsweden.com/wp-content/uploads/2025/05/FedEx-1.svg" alt="FedEx" />
+            <img src="https://jonnajintonsweden.com/wp-content/uploads/2025/05/Visa-1.svg" alt="Visa" />
+            <img src="https://jonnajintonsweden.com/wp-content/uploads/2025/05/Mastercard-1.svg" alt="Mastercard" />
+            <img src="https://jonnajintonsweden.com/wp-content/uploads/2025/05/AmericanExpress-1.svg" alt="American Express" />
+            <img src="https://svaeria.is/wp-content/uploads/2026/03/Teya_idLF2SZofv_1.svg" alt="Teya" />
+            <img src="https://jonnajintonsweden.com/wp-content/uploads/2025/05/Klarna-1.svg" alt="Klarna" />
         </div>
     </section>
 

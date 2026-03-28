@@ -27,7 +27,7 @@ define('KADENCE_CHILD_URI', get_stylesheet_directory_uri());
  */
 
 // Core functionality
-require_once KADENCE_CHILD_DIR . '/inc/class-currency-converter.php';  // Multi-currency system
+require_once KADENCE_CHILD_DIR . '/inc/class-currency-converter.php';  // Frontend-only currency display conversion (payments always in ISK)
 require_once KADENCE_CHILD_DIR . '/inc/enqueues.php';                   // Scripts & styles
 require_once KADENCE_CHILD_DIR . '/inc/helpers.php';                    // Utility functions & AJAX
 require_once KADENCE_CHILD_DIR . '/inc/header-functions.php';           // Header & footer logic

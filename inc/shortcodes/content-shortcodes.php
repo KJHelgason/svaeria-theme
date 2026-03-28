@@ -40,7 +40,7 @@ function jj_trust_badges_shortcode($atts) {
         <div class="trust-badge jj-feature">
             <div class="trust-badge-icon jj-feature-icon">🔒</div>
             <div class="trust-badge-title jj-feature-title">Safe And Secure Payments</div>
-            <div class="trust-badge-text jj-feature-text">Pay safe with Card, PayPal or Klarna</div>
+            <div class="trust-badge-text jj-feature-text">Pay safe with Card, Teya or Klarna</div>
         </div>
     </div>
     <?php
