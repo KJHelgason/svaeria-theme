@@ -114,8 +114,8 @@ while (have_posts()) : the_post();
                         ?>
                         <div class="jj-masonry-item jj-masonry-text jj-grid-small">
                             <div class="jj-text-content">
-                                <h2>Inspired by Nature</h2>
-                                <p>Each piece in our collection tells a story of the Nordic wilderness, crafted with love and care in the heart of Iceland.</p>
+                                <h2>Over the years</h2>
+                                <p>A few highlights of designs I have created over the previous years</p>
                             </div>
                         </div>
                         <?php
