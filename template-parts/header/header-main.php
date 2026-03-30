@@ -188,11 +188,6 @@ if (!empty($product_categories) && !is_wp_error($product_categories)) {
                     <li>
                         <a href="<?php echo esc_url(home_url('/social-media')); ?>">Social Media</a>
                     </li>
-                    
-                    <!-- About Us -->
-                    <li>
-                        <a href="<?php echo esc_url(home_url('/about-us')); ?>">About Us</a>
-                    </li>
                 </ul>
             </nav>
             
@@ -410,7 +405,6 @@ if (!empty($product_categories) && !is_wp_error($product_categories)) {
                 </li>
                 <li><a href="<?php echo esc_url(home_url('/gallery')); ?>">Gallery</a></li>
                 <li><a href="<?php echo esc_url(home_url('/social-media')); ?>">Social Media</a></li>
-                <li><a href="<?php echo esc_url(home_url('/about-us')); ?>">About Us</a></li>
                 <li><a href="<?php echo esc_url(home_url('/my-account')); ?>">My Account</a></li>
             </ul>
         </nav>

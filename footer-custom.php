@@ -122,7 +122,6 @@
                 <div class="jj-footer-menu">
                     <h4>Company</h4>
                     <ul>
-                        <li><a href="/about-us/">About us</a></li>
                         <li><a href="/social-media/">Social Media</a></li>
                     </ul>
                 </div>

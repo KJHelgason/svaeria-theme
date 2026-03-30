@@ -146,7 +146,6 @@
                         'container' => false,
                         'fallback_cb' => function() {
                             echo '<ul>
-                                <li><a href="/about-us/">About us</a></li>
                                 <li><a href="/social-media/">Social Media</a></li>
                             </ul>';
                         }
