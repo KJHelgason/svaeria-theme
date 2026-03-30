@@ -17,7 +17,7 @@
             <div class="jj-newsletter-content">
                 <p class="jj-newsletter-subtitle">SIGN UP FOR</p>
                 <h3 class="jj-newsletter-title">Our newsletter</h3>
-                <p class="jj-newsletter-text">Sign up for our newsletter, and you'll be the first to know when we are about to release new products like jewelry, prints and paintings.</p>
+                <p class="jj-newsletter-text">Sign up for our newsletter, and you'll be the first to know when we are about to release new collections.</p>
                 
                 <?php 
                 // Check if Mailchimp for WordPress is active
@@ -177,7 +177,7 @@
                     <h4>Contact</h4>
                     <p>
                         <strong>Business Inquiries</strong><br>
-                        <a href="mailto:business@example.com">business@example.com</a>
+                        <a href="mailto:svaeria.elsasolblom@gmail.com">svaeria.elsasolblom@gmail.com</a>
                     </p>
                 </div>
             </div>
