@@ -34,6 +34,9 @@ require_once KADENCE_CHILD_DIR . '/inc/header-functions.php';           // Heade
 require_once KADENCE_CHILD_DIR . '/inc/widgets.php';                    // Widget areas
 require_once KADENCE_CHILD_DIR . '/inc/customizer.php';                 // Customizer settings
 
+// Disable WordPress big image downscaling so full-size uploads are preserved
+add_filter('big_image_size_threshold', '__return_false');
+
 // WooCommerce (only if active)
 if (class_exists('WooCommerce')) {
     require_once KADENCE_CHILD_DIR . '/inc/woocommerce.php';
