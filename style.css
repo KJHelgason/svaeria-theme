@@ -167,8 +167,8 @@ a:hover {
 .jj-hero,
 .wp-block-cover.jj-hero {
     min-height: auto !important;
-    max-height: 800px !important;
-    height: 800px !important;
+    max-height: 1200px !important;
+    height: 1200px !important;
     width: 100vw !important;
     max-width: 100vw !important;
     margin-left: calc(-50vw + 50%) !important;
@@ -258,6 +258,7 @@ a:hover {
         min-height: 70vh !important;
         height: auto !important;
         max-height: 500px !important;
+        height: 500px !important;
     }
     
     .jj-hero .wp-block-cover__inner-container {
@@ -291,12 +292,7 @@ a:hover {
 }
 
 .jj-hero-banner-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
+    display: none;
 }
 
 .jj-hero-banner-content {
@@ -2842,13 +2838,7 @@ body.header-is-sticky {
 
 .hero-section .hero-overlay,
 .jj-hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.4) 100%);
-    z-index: 0;
+    display: none;
 }
 
 .hero-section .hero-content,
